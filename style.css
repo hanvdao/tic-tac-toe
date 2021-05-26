@@ -1,0 +1,9 @@
+.board {
+  width: 30%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.board-field {
+  height: 30px;
+}

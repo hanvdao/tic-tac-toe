@@ -1,9 +1,85 @@
+/* https://coolors.co/555b6e-89b0ae-bee3db-faf9f9-ffd6ba */
+/* color pallete */
+
+/* Remove padding and margin */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #555b6e;
+  color: #dadada;
+}
+
+header {
+  background-color: #ffd6ba;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #3f424d;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid #b1917c 10px;
+}
+
+h1 {
+  font-size: 75px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.message {
+  font-size: 60px;
+  font-weight: 400;
+  margin: 10px;
+}
 .board {
-  width: 30%;
+  margin: 20px;
+  width: 25%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+  border: solid #89b0ae 10px;
+  border-radius: 3px;
 }
 
 .board-field {
-  height: 30px;
+  aspect-ratio: 1;
+  font-size: 80px;
+  background-color: #bee3db;
+  color: #3e414b;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+}
+
+.board-field:hover {
+  background-color: #89b0ae;
+}
+
+.restart-btn {
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+  margin: 20px;
+  padding: 5px;
+  background-color: #ffd6ba;
+  color: #3f424d;
+  font-weight: 400;
+  border: none;
+  border-radius: 3px;
+}
+
+.restart-btn:hover {
+  background-color: #b1917c;
+  color: #663131;
 }
